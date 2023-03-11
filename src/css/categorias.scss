@@ -1,0 +1,81 @@
+#categorias{
+  background-color:#222222;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height:auto;
+  #input_edit{
+    position: relative;
+    width: fit-content;
+    margin:auto;
+    button{
+      background-color:white;
+      width:16px;
+      height:16px;
+      position: absolute;
+      z-index: 1;
+      border-radius:50%;
+      background-image: url('img/done.png');
+      background-position: center center;
+      background-size:contain ;
+      right: 1px;
+      top: 4px;
+      }
+  }
+  .noshow{
+    display:none;
+  }
+  .delete{
+    position: absolute;
+    background-image: url('img/delete.png');
+    width: 24px;
+    background-color:transparent;
+    height: 24px;
+    background-position: center center;
+    background-size:contain;
+    border:none ;
+  }
+  .btn{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .btn:hover {
+    background-color:rgba(255, 255, 255, 0.397);
+    text-overflow: initial;
+    white-space: initial;
+  }
+  .btn:focus{
+    color: black;
+    background-color:rgb(214, 255, 255);
+    border-left-color:maroon;
+
+  }
+  button{
+    width: fit-content;
+    margin:8px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    border-color:aqua;
+   
+      }
+  nav{
+    height: 100vh;
+    overflow-y: auto;
+    input{
+      padding: 8px;
+      border-radius: 4px;
+      border:0.1px solid #7a7a7a15;
+      color: white;
+      font-size:1.1em;
+      text-align: left;
+      width: 25vw;
+      margin:8px;
+      background-color:transparent;
+      border-left:4px solid aqua ;
+      
+    }
+  }
+}
